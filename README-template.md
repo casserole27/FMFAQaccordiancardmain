@@ -50,7 +50,22 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 ### Built with
 
 - Semantic HTML5 markup
+
+03.16.22
+This is my first project incorproating JavaScript, and I'm unsure where to begin, so I'm beginning with what I know. I'm starting with a structured HTML5 document, building as much as I can before moving onto CSS.
+I structured the document to include the images. For the text, I made the "FAQ" an <h1>, the questions <h2>, and the answers <p>. If this is incorrect, I will change it later. 
+
 - CSS custom properties
+
+03.16.22
+I laid out the global CSS styles, such as the fonts and font colors, the background color. I also used the <main> tag to construct a card with a white background and 1440px width. 
+
+I laid out variables this time since there many colors, and I needed to go back and review that process as well.  
+
+I am wondering if I should build using mobile-first again.
+
+I have no idea how to overlap the three images to mimic the layout in the given design files, I will have to research that.
+
 - Flexbox
 - CSS Grid
 - Mobile-first workflow

@@ -6,8 +6,48 @@ clewisdev.com
 March 2022
 */
 
+/******* VARIABLES *******/
+
+:root {
+    --bold-text-color: hsl(238, 29%, 16%);
+    --question-text-color: hsl(237, 12%, 33%);
+    --answer-text-color: hsl(240, 6%, 50%);  
+    --text-color: hsl(238, 29%, 16%);
+    --text-color: hsl(14, 88%, 65%);
+    --divider-color: hsl(240, 5%, 91%);
+  }
+
+  
+/****** GLOBAL STYLES ******/
+
 body {
     font-family: 'Kumbh Sans', sans-serif;
+    background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+}
+
+h1 {
+    color: var(--bold-text-color);
+    font-weight: 700;
+}
+
+h2 {
+    color: var(--question-text-color);
+}
+
+p {
+    color: var(--answer-text-color);
+}
+
+hr {
+    color: var(--divider-color);
+}
+
+
+/****** CARD STYLING ******/
+
+.card {
+    width: 1440px;
+    background-color: white;
 }
 
 /*
