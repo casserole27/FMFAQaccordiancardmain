@@ -22,13 +22,13 @@ March 2022
 
 body {
     font-family: 'Kumbh Sans', sans-serif;
-    /*background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));*/
+    background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
 }
 
 h1 {
     color: var(--bold-text-color);
     font-weight: 700;
-    text-align: left;
+    text-align: center;
 }
 
 h2 {
@@ -43,6 +43,12 @@ p {
 
 hr {
     color: var(--divider-color);
+}
+
+/****** IMG STYLING ******/
+img {
+    position: relative;
+    margin: 0;
 }
 
 /****** ACCORDIAN STYLING ******/
@@ -71,7 +77,7 @@ hr {
 .label {
     position: relative;
     padding: .5rem 0;
-    font-size: 1.5em;
+    font-size: 1em;
     cursor: pointer;
 }
 
@@ -101,17 +107,13 @@ hr {
     transition: 0.5s;
 }
 
-
-
-
-
-
 /****** CARD STYLING ******/
 
-/*.card {
-    width: 1440px;
+.card {
+    width: 375px;
     background-color: white;
-}*/
+    padding: 2rem;
+}
 
 /*
 # Front-end Style Guide
