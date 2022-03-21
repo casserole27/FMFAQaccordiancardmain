@@ -66,6 +66,24 @@ I am wondering if I should build using mobile-first again.
 
 I have no idea how to overlap the three images to mimic the layout in the given design files, I will have to research that.
 
+03.22.22
+
+I am using a FCC tutorial to learn how to build the accordian.
+https://www.freecodecamp.org/news/build-an-accordion-menu-using-html-css-and-javascript/
+
+HTML markup needs a container, label, and content tag and class for each section of the accordian. The tutorial uses all <div>, but I used a <div> for the intial container class, and then left in my <h2> and <p> tags for a more semantic markup.
+
+CSS - review position
+I added the carrot that will make the accordian interactive. I had to modify some of the code, I believe because it is not a single page like the OP was trying to do. It will be a two column grid like the previous project I did. 
+
+The content is also hidden. I am assuming the JavaScript is what makes it expand. 
+This is achieved by the 
+height: 0
+overflow: hidden
+modifiers. The first makes the container's height 0, and the second hides it since it's overflowing.
+
+I cleaned up the tutorial code relative to this design and adjusted the font sizing. 
+
 - Flexbox
 - CSS Grid
 - Mobile-first workflow

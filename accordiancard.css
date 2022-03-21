@@ -13,7 +13,7 @@ March 2022
     --question-text-color: hsl(237, 12%, 33%);
     --answer-text-color: hsl(240, 6%, 50%);  
     --text-color: hsl(238, 29%, 16%);
-    --text-color: hsl(14, 88%, 65%);
+    --sign-color: hsl(14, 88%, 65%);
     --divider-color: hsl(240, 5%, 91%);
   }
 
@@ -22,33 +22,96 @@ March 2022
 
 body {
     font-family: 'Kumbh Sans', sans-serif;
-    background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+    /*background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));*/
 }
 
 h1 {
     color: var(--bold-text-color);
     font-weight: 700;
+    text-align: left;
 }
 
 h2 {
     color: var(--question-text-color);
+    text-align: left;
 }
 
 p {
     color: var(--answer-text-color);
+    text-align: left;
 }
 
 hr {
     color: var(--divider-color);
 }
 
+/****** ACCORDIAN STYLING ******/
+
+.accordian {
+    /*width: 800px;
+    margin: 90px auto;
+    color: black;
+    padding: 45px 45px;*/
+    background: white;
+}
+
+/* setting up functionality
+/* set position property for each container
+/* that holds label and content to relative
+/* can position children relative to it*/
+
+.container {
+    position: relative;
+    margin: 1rem 1rem
+}
+
+
+/* positions labels relative to the container*/
+
+.label {
+    position: relative;
+    padding: .5rem 0;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+/* adding ^ */
+
+.label::before {
+    content: '^';
+    color: var(--sign-color);
+    font-size: 1.5em;
+    font-weight: 700;
+    position: absolute;
+    right: 1rem;
+    transform: rotate(180deg);
+    /*top: 50%;*/
+    /*transform: translateY(-50%);*/
+    
+}
+
+.content {
+    position: relative;
+    background: white;
+    height: 0;
+    font-size: 1em;
+    text-align: left;
+    /*width: 780px;*/
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+
+
+
+
 
 /****** CARD STYLING ******/
 
-.card {
+/*.card {
     width: 1440px;
     background-color: white;
-}
+}*/
 
 /*
 # Front-end Style Guide
