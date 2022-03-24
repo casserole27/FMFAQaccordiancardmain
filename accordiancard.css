@@ -28,7 +28,9 @@ body {
 h1 {
     color: var(--bold-text-color);
     font-weight: 700;
+    font-size: 2em;
     text-align: center;
+    margin-top: 6rem;
 }
 
 h2 {
@@ -45,13 +47,61 @@ hr {
     color: var(--divider-color);
 }
 
+/****** MAIN CONTAINER STYLING ******/
+
+.main-container {
+    width: 375px;
+    margin: 0 auto;
+    display: grid;
+}
+
 /****** IMG STYLING ******/
-img {
-    position: relative;
-    margin: 0;
+
+.image-container {
+    margin-top: 3rem;
+    display: grid;
+    grid-template-rows: 150px;
+}
+
+.boximage {
+    /*position: relative;
+    top: 0;*/
+    grid-row: 1;
+    grid-column: 1;
+    z-index: 3;
+    margin-top: 6rem;
+    margin-left: 2rem;
+}
+
+.personimage {
+    /*position: relative;
+    top: 0;*/
+    grid-row: 1;
+    grid-column: 1;
+    z-index: 2;
+    margin: 0 auto;
+    margin-top: .75rem;
+}
+
+.desktopbg {
+    /*position: relative;
+    top: 0;*/
+    grid-row: 1;
+    grid-column: 1;
+    z-index: 1;
+    margin: 0 auto;
+    margin-top: -1rem;
 }
 
 /****** ACCORDIAN STYLING ******/
+
+.faq-container {
+  /*  position: relative;*/
+    background-color: white;
+    /*margin-top: 5rem;*/
+    padding: 3rem;
+    border-radius: 2rem;
+}
 
 .accordian {
     /*width: 800px;
@@ -65,11 +115,6 @@ img {
 /* set position property for each container
 /* that holds label and content to relative
 /* can position children relative to it*/
-
-.container {
-    position: relative;
-    margin: 1rem 1rem
-}
 
 
 /* positions labels relative to the container*/
@@ -88,7 +133,7 @@ img {
     color: var(--sign-color);
     font-size: 1.5em;
     font-weight: 700;
-    position: absolute;
+    /*position: absolute;*/
     right: 1rem;
     transform: rotate(180deg);
     /*top: 50%;*/
@@ -97,23 +142,17 @@ img {
 }
 
 .content {
-    position: relative;
+    /*position: relative;*/
     background: white;
     height: 0;
     font-size: 1em;
     text-align: left;
-    /*width: 780px;*/
+    /*width: 375px;*/   
     overflow: hidden;
     transition: 0.5s;
 }
 
-/****** CARD STYLING ******/
 
-.card {
-    width: 375px;
-    background-color: white;
-    padding: 2rem;
-}
 
 /*
 # Front-end Style Guide

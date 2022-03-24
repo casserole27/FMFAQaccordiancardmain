@@ -88,6 +88,10 @@ I cleaned up the tutorial code relative to this design and adjusted the font siz
 I'm going to do a similar grid to my previous project, so I'm going to go with a mobile-first design.
 Use CSS grid to overlap images?
 
+03.24.22
+
+Re-reading about CSS positioning to see if I can overlap the images. If I can't do it using positioning, I will do it with grid?
+
 
 - Flexbox
 - CSS Grid
