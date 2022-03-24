@@ -103,6 +103,11 @@ Jen Simmmons - overlapping grid: https://labs.jensimmons.com/2017/01-003.html
 I will use the suggested positioning from the tutorial inside the accordian and continue to try to read and comprehend. 
 https://developer.mozilla.org/en-US/docs/Web/CSS/position
 
+Reviewed box shadow - need higher offset-y and spread radius for this type of shadow
+https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow
+
+Cleaned up styling to reflect spacing and placement in mobile design.
+Attempted the switch to desktop design, but proving more difficult. I don't know if the image sizing will work!
 
 - Flexbox
 - CSS Grid
