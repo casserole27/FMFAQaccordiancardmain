@@ -98,6 +98,7 @@ This states that sections should always have a heading though.
 Curses! --> If you are only using the element as a styling wrapper, use a <div>. A rule of thumb is that a <section> should logically appear in the outline of a document.
 
 Positioning feels wonky and unresponsive to me, so I decided on a mobile-first layout using CSS grid. I used the grid and margins to overlap the images.
+Jen Simmmons - overlapping grid: https://labs.jensimmons.com/2017/01-003.html
 
 I will use the suggested positioning from the tutorial inside the accordian and continue to try to read and comprehend. 
 https://developer.mozilla.org/en-US/docs/Web/CSS/position
