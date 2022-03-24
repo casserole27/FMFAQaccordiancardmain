@@ -92,6 +92,16 @@ Use CSS grid to overlap images?
 
 Re-reading about CSS positioning to see if I can overlap the images. If I can't do it using positioning, I will do it with grid?
 
+For HTML structuring, I added a main container, an image container, and a faq container using the section elements. I'm unsure whether section can be used in this way, but too many divs makes me very confused. 
+https://developer.mozilla.org/en-US/docs/Web/HTML/Element/section
+This states that sections should always have a heading though. 
+Curses! --> If you are only using the element as a styling wrapper, use a <div>. A rule of thumb is that a <section> should logically appear in the outline of a document.
+
+Positioning feels wonky and unresponsive to me, so I decided on a mobile-first layout using CSS grid. I used the grid and margins to overlap the images.
+
+I will use the suggested positioning from the tutorial inside the accordian and continue to try to read and comprehend. 
+https://developer.mozilla.org/en-US/docs/Web/CSS/position
+
 
 - Flexbox
 - CSS Grid
