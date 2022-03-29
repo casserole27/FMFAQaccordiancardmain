@@ -22,6 +22,8 @@ March 2022
 
 body {
     font-family: 'Kumbh Sans', sans-serif;
+    background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+
 }
 
 h1 {
@@ -42,7 +44,6 @@ hr {
 /****** MAIN CONTAINER STYLING ******/
 
 .main-container {
-    background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
     width: 375px;
     margin: 0 auto;
     padding: 1.5rem;
@@ -98,9 +99,9 @@ hr {
     
 }
 
-.accordian {
+/*.accordian {
    background: white;
-}
+}*/
 
 /* setting up functionality
 /* set position property for each container
@@ -141,32 +142,51 @@ hr {
     transition: 0.5s;
 }
 
-/****** MEDIA QUERIES ******/
+
+/****** ACTIVE CLASS FOR JS ******/
+
+
+/* Unhides the content part when active. Sets the height */
+
+.accordion .container.active .content {
+    height: 150px;
+  }
+  
+  /* Changes from plus sign to negative sign once active */
+  
+  .accordion .container.active .label::before {
+    content: '-';
+    font-size: 30px;
+  }    
+
+
+  /****** MEDIA QUERIES ******/
 
 @media (min-width: 1000px) {
 
 body {
-    background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+    background-color: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
 }
 
 .main-container {
     background-color: white;
     width: 1080PX;
     margin: 0 auto;
-    padding: 1.5rem;
+    padding: 3rem;
+    border-radius: 2rem;
     display: grid;
     grid-template-columns: 540px 540px;
     grid-template-areas: 
     "images faq";
 }
 
-.image-container {
+/*.image-container {
     background-color: white;
-}
+}*/
 
 .faq-container {
     grid-area: faq;
-    background-color: white;
+    /*background-color: white;*/
     margin-bottom: 0;
     padding: 1.5rem;
     padding-bottom: 0;
@@ -177,8 +197,10 @@ body {
 
 h1 {
     margin-top: 0;
+    text-align: left;
 }
 
+}
 
 
 

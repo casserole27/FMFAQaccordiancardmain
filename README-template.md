@@ -109,6 +109,12 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow
 Cleaned up styling to reflect spacing and placement in mobile design.
 Attempted the switch to desktop design, but proving more difficult. I don't know if the image sizing will work!
 
+03.29.22
+I was able to make the design reponsive, but unsure about how to handle the image sizing. I'd like to do it through HTML, but not sure if resizing is possible?
+Finishing layout setup so I can try to JavaScript accordian code. 
+
+I GOT THE JS TO RUNNNNNNNN! I don't know what all of the code means besides a basic framework, but it's functional!
+
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
