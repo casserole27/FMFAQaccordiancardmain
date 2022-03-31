@@ -17,6 +17,7 @@ March 2022
     --divider-color: hsla(240, 10%, 96%, 0.349);
   }
 
+
   
 /****** GLOBAL STYLES ******/
 
@@ -53,19 +54,21 @@ hr {
     "faq";
 }
 
-/****** IMG STYLING ******/
+/****** IMG STYLING - MOBILE DESIGN ******/
 
 
 /*background: bg-color bg-image position/bg-size bg-repeat bg-origin bg-clip bg-attachment initial|inherit;*/
 
 .image-container{
-    /*background: url("images/illustration-woman-online-desktop.svg") no-repeat 100% 45%, 
-    url("images/bg-pattern-desktop.svg") no-repeat 100% 72%;*/
-    background: url("images/illustration-woman-online-mobile.svg") /*center/100%*/ no-repeat, 
-    url("images/bg-pattern-mobile.svg") /*center/100%*/ no-repeat;
-    /*position: relative;*/
-    
+    background: url("images/illustration-woman-online-mobile.svg") center/80% no-repeat padding-box, 
+    url("images/bg-pattern-mobile.svg") center/80% no-repeat padding-box;
+    /*position: relative;
+    top: 35%*/
 }
+
+/*.boximage {
+    display: none;
+}*/
 
 /*.image-container {
     grid-area: images;
@@ -74,10 +77,6 @@ hr {
     grid-template-rows: 150px;
 }*/
 
-.boximage {
-  position: relative;
-  left: -10%;
-}
 
 /*.personimage {
     grid-row: 1;
@@ -166,58 +165,66 @@ hr {
   .accordion .container.active .label::before {
     content: '-';
     font-size: 30px;
-  }    
+  }  
+  
+  /****** MEDIA QUERIES - DESKTOP DESIGN ******/
 
+  @media (min-width: 1000px) {
 
-  /****** MEDIA QUERIES ******/
-
-@media (min-width: 1000px) {
-
-body {
-    background-color: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
-}
-
-.main-container {
-    background-color: white;
-    width: 1000px;
-    margin: 0 auto;
-    padding-left: 0;
-    padding-right: 3rem;
-    padding-top: 2rem;
-    padding-bottom: 3rem;
-    border-radius: 1rem;
-    display: grid;
-    grid-template-columns: 500px 500px;
-    grid-template-areas: 
-    "images faq";
-}
-
-.image-container{
-    /*background: url("images/illustration-woman-online-desktop.svg") no-repeat 100% 45%, 
-    url("images/bg-pattern-desktop.svg") no-repeat 100% 72%;*/
-    background: url("images/illustration-woman-online-desktop.svg") left/100% no-repeat, 
-    url("images/bg-pattern-desktop.svg") left/100% no-repeat;
-    position: relative;
-    left: -10%;
-}
-
-.faq-container {
-    grid-area: faq;
-    /*background-color: white;*/
-    margin-bottom: 0;
-    padding: 1.5rem;
-    padding-bottom: 0;
-    border-radius: none;
-    box-shadow: none;
+    body {
+        background-color: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+    }
     
-}
+    .main-container {
+        background-color: white;
+        width: 1000px;
+        margin: 0 auto;
+        padding-left: 0;
+        padding-right: 3rem;
+        padding-top: 2rem;
+        padding-bottom: 3rem;
+        border-radius: 1rem;
+        display: grid;
+        grid-template-columns: 500px 500px;
+        grid-template-areas: 
+        "images faq";
+    }
 
-h1 {
-    margin-top: 0;
-    text-align: left;
-}
+    background: bg-color bg-image position/bg-size bg-repeat bg-origin bg-clip bg-attachment initial|inherit;
+    
+    .image-container{
+        background: url("images/illustration-woman-online-desktop.svg") left/80% no-repeat padding-box, 
+        url("images/bg-pattern-desktop.svg") left/80% no-repeat padding-box;
+        position: relative;
+        left: -10%;
+    }
+    
+    .boximage {
+        position: relative;
+        left: -10%;
+        top: 40%;
+      }
+    
+    .faq-container {
+        grid-area: faq;
+        /*background-color: white;*/
+        margin-bottom: 0;
+        padding: 1.5rem;
+        padding-bottom: 0;
+        border-radius: none;
+        box-shadow: none;
+        
+    }
+    
+    h1 {
+        margin-top: 0;
+        text-align: left;
+    }
+    
+    }  
 
-}
+
+
 
 
 
