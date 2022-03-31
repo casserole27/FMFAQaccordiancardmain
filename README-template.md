@@ -115,6 +115,14 @@ Finishing layout setup so I can try to JavaScript accordian code.
 
 I GOT THE JS TO RUNNNNNNNN! I don't know what all of the code means besides a basic framework, but it's functional!
 
+03.31.22
+
+Attempting image placement and alignment with CSS instead of HTML. I can't figure out how to make the sizes responsive just in HTML.
+
+Got desktop images to show up through CSS with decent positioning, but now the mobile ones have disappeared.
+CSS background property is actually shorthand for many other properties. Syntax: 
+background: bg-color bg-image position/bg-size bg-repeat bg-origin bg-clip bg-attachment initial|inherit;
+
 - Flexbox
 - CSS Grid
 - Mobile-first workflow

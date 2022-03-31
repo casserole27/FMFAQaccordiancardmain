@@ -46,7 +46,7 @@ hr {
 .main-container {
     width: 375px;
     margin: 0 auto;
-    padding: 1.5rem;
+    padding-right: 1.5rem;
     display: grid;
     grid-template-areas: 
     "images"
@@ -55,22 +55,31 @@ hr {
 
 /****** IMG STYLING ******/
 
-.image-container {
+
+/*background: bg-color bg-image position/bg-size bg-repeat bg-origin bg-clip bg-attachment initial|inherit;*/
+
+.image-container{
+    /*background: url("images/illustration-woman-online-desktop.svg") no-repeat 100% 45%, 
+    url("images/bg-pattern-desktop.svg") no-repeat 100% 72%;*/
+    background: url("images/illustration-woman-online-mobile.svg") /*center/100%*/ no-repeat, 
+    url("images/bg-pattern-mobile.svg") /*center/100%*/ no-repeat;
+    /*position: relative;*/
+    
+}
+
+/*.image-container {
     grid-area: images;
     margin-top: 3rem;
     display: grid;
     grid-template-rows: 150px;
-}
+}*/
 
 .boximage {
-    grid-row: 1;
-    grid-column: 1;
-    z-index: 3;
-    margin-top: 6rem;
-    margin-left: 2rem;
+  position: relative;
+  left: -10%;
 }
 
-.personimage {
+/*.personimage {
     grid-row: 1;
     grid-column: 1;
     z-index: 2;
@@ -84,7 +93,7 @@ hr {
     z-index: 1;
     margin: 0 auto;
     margin-top: -1rem;
-}
+}*/
 
 /****** ACCORDIAN STYLING ******/
 
@@ -170,19 +179,27 @@ body {
 
 .main-container {
     background-color: white;
-    width: 1080PX;
+    width: 1000px;
     margin: 0 auto;
-    padding: 3rem;
-    border-radius: 2rem;
+    padding-left: 0;
+    padding-right: 3rem;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    border-radius: 1rem;
     display: grid;
-    grid-template-columns: 540px 540px;
+    grid-template-columns: 500px 500px;
     grid-template-areas: 
     "images faq";
 }
 
-/*.image-container {
-    background-color: white;
-}*/
+.image-container{
+    /*background: url("images/illustration-woman-online-desktop.svg") no-repeat 100% 45%, 
+    url("images/bg-pattern-desktop.svg") no-repeat 100% 72%;*/
+    background: url("images/illustration-woman-online-desktop.svg") left/100% no-repeat, 
+    url("images/bg-pattern-desktop.svg") left/100% no-repeat;
+    position: relative;
+    left: -10%;
+}
 
 .faq-container {
     grid-area: faq;
