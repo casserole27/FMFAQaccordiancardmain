@@ -123,6 +123,10 @@ Got desktop images to show up through CSS with decent positioning, but now the m
 CSS background property is actually shorthand for many other properties. Syntax: 
 background: bg-color bg-image position/bg-size bg-repeat bg-origin bg-clip bg-attachment initial|inherit;
 
+Should the background images be in their own container, or in the main container? 
+Desktop vs. mobile not working!
+Look at background-clip
+
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
