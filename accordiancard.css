@@ -4,95 +4,61 @@ FAQ Accordian Card Main
 C Lewis
 clewisdev.com
 March 2022
+Revamp: December 2022
 */
+
 
 /******* VARIABLES *******/
 
 :root {
-    --bold-text-color: hsl(238, 29%, 16%);
-    --question-text-color: hsl(240, 6%, 50%);
-    --answer-text-color: hsl(240, 6%, 50%);  
-    --text-color: hsl(238, 29%, 16%);
-    --sign-color: hsl(14, 88%, 65%);
-    --divider-color: hsla(240, 10%, 96%, 0.349);
-  }
+
+    --text-very-dark-desaturated-blue: hsl(238, 29%, 16%)
+    --text-soft-red: hsl(14, 88%, 65%)
+    --text-very-dark-grayish-blue: hsl(237, 12%, 33%)
+    --text-dark-grayish-blue: hsl(240, 6%, 50%)
+    
+    /* Background gradient: */
+    --grad1-soft-violet: hsl(273, 75%, 66%)
+    --grad2-soft-blue: hsl(240, 73%, 65%)
+    
+    --dividers-light-grayish-blue: hsl(240, 5%, 91%)
+  
+    --ff: 'Kumbh Sans', sans-serif;
+
+    --br: 2rem;
+
+    --fs-s-mobile: 12px;
+    --fs-m-mobile: 13px;
+    --fs-l-mobile: 32px;
+    --fs-m-desktop: 14px;
+}
 
 
   
-/****** GLOBAL STYLES ******/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/****** MOBILE FIRST DESIGN ******/
+  /****** GLOBAL STYLES ******/
 
 body {
-    font-family: 'Kumbh Sans', sans-serif;
+    font-family: var(--ff);
     background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
-
+    
 }
 
-h1 {
-    color: var(--bold-text-color);
-    font-weight: 700;
-    font-size: 2em;
-    text-align: center;
-    margin-top: 8rem;
-    margin-bottom: 2rem;
-}
-
-hr {
-    color: var(--divider-color);
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-}
-
-/****** MAIN CONTAINER STYLING ******/
-
-.main-container {
-    width: 375px;
-    margin: 0 auto;
-    padding-right: 1.5rem;
-    display: grid;
-    grid-template-areas: 
-    "images"
-    "faq";
-}
-
-/****** IMG STYLING - MOBILE DESIGN ******/
 
 
-/*background: bg-color bg-image position/bg-size bg-repeat bg-origin bg-clip bg-attachment initial|inherit;*/
-
-.image-container{
-    background: url("images/illustration-woman-online-mobile.svg") center/80% no-repeat padding-box, 
-    url("images/bg-pattern-mobile.svg") center/80% no-repeat padding-box;
-    /*position: relative;
-    top: 35%*/
-}
-
-/*.boximage {
-    display: none;
-}*/
-
-/*.image-container {
-    grid-area: images;
-    margin-top: 3rem;
-    display: grid;
-    grid-template-rows: 150px;
-}*/
 
 
-/*.personimage {
-    grid-row: 1;
-    grid-column: 1;
-    z-index: 2;
-    margin: 0 auto;
-    margin-top: .75rem;
-}
 
-.desktopbg {
-    grid-row: 1;
-    grid-column: 1;
-    z-index: 1;
-    margin: 0 auto;
-    margin-top: -1rem;
-}*/
+
+
+
 
 /****** ACCORDIAN STYLING ******/
 
@@ -168,69 +134,6 @@ hr {
   }  
   
   /****** MEDIA QUERIES - DESKTOP DESIGN ******/
-
-  @media (min-width: 1000px) {
-
-    body {
-        background-color: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
-    }
-    
-    .main-container {
-        background-color: white;
-        width: 1000px;
-        margin: 0 auto;
-        padding-left: 0;
-        padding-right: 3rem;
-        padding-top: 2rem;
-        padding-bottom: 3rem;
-        border-radius: 1rem;
-        display: grid;
-        grid-template-columns: 500px 500px;
-        grid-template-areas: 
-        "images faq";
-    }
-
-    background: bg-color bg-image position/bg-size bg-repeat bg-origin bg-clip bg-attachment initial|inherit;
-    
-    .image-container{
-        background: url("images/illustration-woman-online-desktop.svg") left/80% no-repeat padding-box, 
-        url("images/bg-pattern-desktop.svg") left/80% no-repeat padding-box;
-        position: relative;
-        left: -10%;
-    }
-    
-    .boximage {
-        position: relative;
-        left: -10%;
-        top: 40%;
-      }
-    
-    .faq-container {
-        grid-area: faq;
-        /*background-color: white;*/
-        margin-bottom: 0;
-        padding: 1.5rem;
-        padding-bottom: 0;
-        border-radius: none;
-        box-shadow: none;
-        
-    }
-    
-    h1 {
-        margin-top: 0;
-        text-align: left;
-    }
-    
-    }  
-
-
-
-
-
-
-
-
-
 
 
 
