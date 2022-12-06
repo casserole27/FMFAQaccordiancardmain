@@ -23,7 +23,7 @@ Revamp: December 2022
     
     --dividers-light-grayish-blue: hsl(240, 5%, 91%)
   
-    --ff: 'Kumbh Sans', sans-serif;
+    --ffamily: 'Kumbh Sans', sans-serif;
 
     --br: 2rem;
 
@@ -46,12 +46,53 @@ Revamp: December 2022
   /****** GLOBAL STYLES ******/
 
 body {
-    font-family: var(--ff);
+    font-family: 'Kumbh Sans', sans-serif;
     background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
     
 }
 
+button {
+    font-family: 'Kumbh Sans', sans-serif;
+}   
 
+/* main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+} */
+
+img { 
+ margin-top: 2.5rem;
+}
+
+h1 {
+    padding-top: 8.25rem;
+    padding-bottom: 2.375rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* main {
+    display: grid;
+    grid-template-columns: 1fr;
+} */
+
+.faq-container {
+    width: 327px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+hr {
+    margin-top: 1.125rem;
+    margin-bottom: 1.125rem;
+    width: 279px;
+}
+
+.accordion, .panel, hr{
+    display: flex;
+    justify-content: center;
+}
 
 
 
