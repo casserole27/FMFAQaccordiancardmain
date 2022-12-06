@@ -12,16 +12,20 @@ Revamp: December 2022
 
 :root {
 
-    --text-very-dark-desaturated-blue: hsl(238, 29%, 16%)
-    --text-soft-red: hsl(14, 88%, 65%)
-    --text-very-dark-grayish-blue: hsl(237, 12%, 33%)
-    --text-dark-grayish-blue: hsl(240, 6%, 50%)
+    --text-very-dark-desaturated-blue: hsl(238, 29%, 16%);
+    --text-soft-red: hsl(14, 88%, 65%);
+    --text-very-dark-grayish-blue: hsl(237, 12%, 33%);
+    --text-dark-grayish-blue: hsl(240, 6%, 50%);
+
+    --faq-question-color: rgba(75, 76, 95, 1);
+    --hr-color: rgba(232, 232, 234, 1);
+
     
     /* Background gradient: */
-    --grad1-soft-violet: hsl(273, 75%, 66%)
-    --grad2-soft-blue: hsl(240, 73%, 65%)
+    --grad1-soft-violet: hsl(273, 75%, 66%);
+    --grad2-soft-blue: hsl(240, 73%, 65%);
     
-    --dividers-light-grayish-blue: hsl(240, 5%, 91%)
+    --dividers-light-grayish-blue: hsl(240, 5%, 91%);
   
     --ffamily: 'Kumbh Sans', sans-serif;
 
@@ -33,6 +37,7 @@ Revamp: December 2022
     --fs-m-desktop: 14px;
 }
 
+/*? Unicode Character “‸” (U+2038)*/
 
   
 * {
@@ -45,55 +50,70 @@ Revamp: December 2022
 /****** MOBILE FIRST DESIGN ******/
   /****** GLOBAL STYLES ******/
 
-body {
+
+  body {
     font-family: 'Kumbh Sans', sans-serif;
     background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
     
 }
 
-button {
-    font-family: 'Kumbh Sans', sans-serif;
-}   
-
-/* main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-} */
-
-img { 
- margin-top: 2.5rem;
-}
-
 h1 {
+    font-size: var(--fs-l-mobile);
     padding-top: 8.25rem;
     padding-bottom: 2.375rem;
     text-transform: uppercase;
     text-align: center;
 }
 
-/* main {
-    display: grid;
-    grid-template-columns: 1fr;
-} */
+button {
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: var(--fs-m-mobile);
+    color: var(--faq-question-color);
+    background-color: white;
+    border: none;
+}   
+
+
+/****** MOBILE IMAGE ******/
+
+.online-mobile-img { 
+ background-image: url(images/bg-pattern-mobile.svg);   
+}
+
+
+/****** CARD STYLING ******/
+
+main {
+    width: 375px;
+    /* display: grid;
+    grid-template-areas: 
+        "img"
+        "faq";
+    justify-content: center; */
+}
+
+/****** FAQ CARD ******/
 
 .faq-container {
+    background-color: white;
     width: 327px;
+    height: 535px;
+    border-radius: var(--br);
     padding-left: 1.5rem;
     padding-right: 1.5rem;
+    box-shadow: .0625rem 2rem 2rem .3125rem #27242450; 
 }
 
 hr {
+    color: var(--hr-color);
     margin-top: 1.125rem;
     margin-bottom: 1.125rem;
     width: 279px;
 }
 
-.accordion, .panel, hr{
-    display: flex;
-    justify-content: center;
+.panel-text {
+    display: none;
 }
-
 
 
 
@@ -103,16 +123,16 @@ hr {
 
 /****** ACCORDIAN STYLING ******/
 
-.faq-container {
+/* .faq-container {
     grid-area: faq;
     background-color: white;
     margin-bottom: 5rem;
     padding: 1.5rem;
     padding-bottom: 3rem;
     border-radius: 2rem;
-    box-shadow: 1px 32px 32px 5px #27242450;
+    box-shadow: 1px 32px 32px 5px #27242450; */
     
-}
+
 
 /*.accordian {
    background: white;
@@ -126,17 +146,17 @@ hr {
 
 /* positions labels relative to the container*/
 
-.label {
+/* .label {
     color: var(--question-text-color);
     position: relative;
     padding: .5rem 0;
     font-size: 1em;
     cursor: pointer;
-}
+} */
 
 /* adding ^ */
 
-.label::before {
+/* .label::before {
     content: '^';
     color: var(--sign-color);
     font-size: 1.5em;
@@ -144,9 +164,9 @@ hr {
     position: absolute;
     right: .25rem;
     transform: rotate(180deg);
-}
+} */
 
-.content {
+/* .content {
     position: relative;
     background: white;
     color: var(--answer-text-color);
@@ -155,7 +175,7 @@ hr {
     text-align: left;
     overflow: hidden;
     transition: 0.5s;
-}
+} */
 
 
 /****** ACTIVE CLASS FOR JS ******/
@@ -163,16 +183,16 @@ hr {
 
 /* Unhides the content part when active. Sets the height */
 
-.accordion .container.active .content {
+/* .accordion .container.active .content {
     height: 150px;
-  }
+  } */
   
   /* Changes from plus sign to negative sign once active */
   
-  .accordion .container.active .label::before {
+  /* .accordion .container.active .label::before {
     content: '-';
     font-size: 30px;
-  }  
+  }   */
   
   /****** MEDIA QUERIES - DESKTOP DESIGN ******/
 
