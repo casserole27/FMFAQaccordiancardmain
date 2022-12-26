@@ -32,9 +32,9 @@ Revamp: December 2022
     --br: 2rem;
 
     --fs-s-mobile: 12px;
-    --fs-m-mobile: 13px;
+    --fs-m-mobile: 15px;
     --fs-l-mobile: 32px;
-    --fs-m-desktop: 14px;
+    --fs-m-desktop: 18px;
 }
 
 /*? Unicode Character “‸” (U+2038)*/
@@ -44,7 +44,6 @@ Revamp: December 2022
 /*! https://www.youtube.com/watch?v=B2WL6KkqhLQ
 /*! overlap: https://www.youtube.com/watch?v=HFG3BKOqOlE&list=PL4-IK0AVhVjPv5tfS82UF_iQgFp4Bl998&index=6 */
 
-/*? box-sizing border box?*/
 
 * {
     margin: 0;
@@ -72,15 +71,33 @@ h1 {
     text-align: center;
 }
 
-button {
+/****** BUTTONS ******/
+
+.accordion {
+    text-align: left;
     font-family: 'Kumbh Sans', sans-serif;
     font-size: var(--fs-m-mobile);
-    color: var(--faq-question-color);
+    color: var(--text-very-dark-grayish-blue);
     background-color: white;
     border: none;
+    width: 100%;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 2.25rem;
     margin-bottom: 1.125rem;
+}
 
-}   
+.accordion:hover {
+    color: var(--text-soft-red);
+    cursor: pointer;
+}
+
+.active, .accordion:active {
+    color: black;
+    font-weight: bold;
+
+}
 
 
 /****** MOBILE IMAGE ******/
@@ -91,7 +108,7 @@ button {
     /* background-position: bottom;    */
     position: absolute;
     top: 40px;
-    margin: 0 2.25rem;
+    margin: 0 5rem;
 }
 
 
@@ -100,9 +117,10 @@ button {
 
 main {
     min-height: 100vh;
+    /* padding: 2rem; */
 }
 
-/****** FAQ CARD ******/
+/****** FAQ CARD STYLING ******/
 
 .faq-container {
     background-color: white;
@@ -112,27 +130,42 @@ main {
     padding-top: 8.25rem;
     box-shadow: .0625rem 2rem 2rem .3125rem #27242450; 
     margin: 1rem;
-    margin-top: 160px;
-    
+    margin-top: 10rem;
 }
 
 hr {
     color: var(--hr-color);
+    opacity: .5;
     margin-bottom: 1.125rem;
     width: 100%;
 }
 
-.panel-text {
+.panel {
     display: none;
 }
 
+.panel-text {
+    /* display: none; */
+    color: var(--text-dark-grayish-blue);
+    font-size: var(--fs-m-mobile);
+    margin-bottom: 1rem;
+}
 
 
+/****** ACCORDION STYLING ******/
+
+.accordion:after {
+    content: '\2038'; /* Unicode character for "caret" sign (^) */
+    font-size: 2.5rem;
+    font-weight: bold;
+   color: var(--text-soft-red);
+ }
+    
+.active:after {
+    transform: rotate(0.5turn);
+}
 
 
-
-
-/****** ACCORDIAN STYLING ******/
 
 /* .faq-container {
     grid-area: faq;
