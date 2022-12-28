@@ -104,7 +104,7 @@ h1 {
 
 .online-mobile-img {
     display: block;
-    background: url(images/bg-pattern-mobile.svg);
+    background: url(images/bg-pattern-mobile.svg) no-repeat;
     /* background-position: bottom;    */
     position: absolute;
     top: 40px;
