@@ -37,12 +37,12 @@ Revamp: December 2022
     --fs-m-desktop: 18px;
 }
 
-/*? Unicode Character “‸” (U+2038)*/
 
+/*TODO Unicode Character “‸” (U+2038)*/
 
-/*! Kevin Powell grid 
-/*! https://www.youtube.com/watch?v=B2WL6KkqhLQ
-/*! overlap: https://www.youtube.com/watch?v=HFG3BKOqOlE&list=PL4-IK0AVhVjPv5tfS82UF_iQgFp4Bl998&index=6 */
+/*TODO Kevin Powell grid 
+/*TODO https://www.youtube.com/watch?v=B2WL6KkqhLQ
+/*TODO overlap: https://www.youtube.com/watch?v=HFG3BKOqOlE&list=PL4-IK0AVhVjPv5tfS82UF_iQgFp4Bl998&index=6 */
 
 
 * {
@@ -93,7 +93,7 @@ h1 {
     cursor: pointer;
 }
 
-.active, .accordion:active {
+.active, .accordion:active { /*! FOR JAVASCRIPT */
     color: black;
     font-weight: bold;
 
@@ -105,7 +105,7 @@ h1 {
 .online-mobile-img {
     display: block;
     background: url(images/bg-pattern-mobile.svg) no-repeat;
-    /* background-position: bottom;    */
+    /*TODO background-position: bottom;    */
     position: absolute;
     top: 40px;
     margin: 0 5rem;
@@ -117,14 +117,14 @@ h1 {
 
 main {
     min-height: 100vh;
-    /* padding: 2rem; */
 }
 
 /****** FAQ CARD STYLING ******/
 
 .faq-container {
     background-color: white;
-    max-width: 90rem;
+    width: 375px;
+    /* max-width: 90rem; */
     border-radius: var(--br);
     padding: 1.5rem;
     padding-top: 8.25rem;
@@ -141,11 +141,10 @@ hr {
 }
 
 .panel {
-    display: none;
+    display: none; /*! FOR JAVASCRIPT */
 }
 
 .panel-text {
-    /* display: none; */
     color: var(--text-dark-grayish-blue);
     font-size: var(--fs-m-mobile);
     margin-bottom: 1rem;
@@ -155,90 +154,15 @@ hr {
 /****** ACCORDION STYLING ******/
 
 .accordion:after {
-    content: '\2038'; /* Unicode character for "caret" sign (^) */
+    content: '\2038'; /*? Unicode character for "caret" sign (^) */
     font-size: 2.5rem;
     font-weight: bold;
    color: var(--text-soft-red);
  }
     
-.active:after {
+.active:after { /*! FOR JAVASCRIPT */
     transform: rotate(0.5turn);
 }
-
-
-
-/* .faq-container {
-    grid-area: faq;
-    background-color: white;
-    margin-bottom: 5rem;
-    padding: 1.5rem;
-    padding-bottom: 3rem;
-    border-radius: 2rem;
-    box-shadow: 1px 32px 32px 5px #27242450; */
-    
-
-
-/*.accordian {
-   background: white;
-}*/
-
-/* setting up functionality
-/* set position property for each container
-/* that holds label and content to relative
-/* can position children relative to it*/
-
-
-/* positions labels relative to the container*/
-
-/* .label {
-    color: var(--question-text-color);
-    position: relative;
-    padding: .5rem 0;
-    font-size: 1em;
-    cursor: pointer;
-} */
-
-/* adding ^ */
-
-/* .label::before {
-    content: '^';
-    color: var(--sign-color);
-    font-size: 1.5em;
-    font-weight: 700;
-    position: absolute;
-    right: .25rem;
-    transform: rotate(180deg);
-} */
-
-/* .content {
-    position: relative;
-    background: white;
-    color: var(--answer-text-color);
-    height: 0;
-    font-size: 1em;
-    text-align: left;
-    overflow: hidden;
-    transition: 0.5s;
-} */
-
-
-/****** ACTIVE CLASS FOR JS ******/
-
-
-/* Unhides the content part when active. Sets the height */
-
-/* .accordion .container.active .content {
-    height: 150px;
-  } */
-  
-  /* Changes from plus sign to negative sign once active */
-  
-  /* .accordion .container.active .label::before {
-    content: '-';
-    font-size: 30px;
-  }   */
-  
-  /****** MEDIA QUERIES - DESKTOP DESIGN ******/
 
 
 
